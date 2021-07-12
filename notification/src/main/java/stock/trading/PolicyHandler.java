@@ -18,6 +18,10 @@ public class PolicyHandler{
 
         System.out.println("\n\n##### listener SendNotification : " + sold.toJson() + "\n\n");
 
+        // REST Request Sample
+        stock.trading.external.Prices prices =
+            NotificationApplication.applicationContext.getBean(stock.trading.external.PricesService.class)
+            .getPrices(/** mapping value needed */);
 
 
         // Sample Logic //
@@ -30,6 +34,10 @@ public class PolicyHandler{
 
         System.out.println("\n\n##### listener SendNotification : " + bought.toJson() + "\n\n");
 
+        // REST Request Sample
+        stock.trading.external.Prices prices =
+            NotificationApplication.applicationContext.getBean(stock.trading.external.PricesService.class)
+            .getPrices(/** mapping value needed */);
 
 
         // Sample Logic //
@@ -42,6 +50,10 @@ public class PolicyHandler{
 
         System.out.println("\n\n##### listener SendNotification : " + askRequested.toJson() + "\n\n");
 
+        // REST Request Sample
+        stock.trading.external.Prices prices =
+            NotificationApplication.applicationContext.getBean(stock.trading.external.PricesService.class)
+            .getPrices(/** mapping value needed */);
 
 
         // Sample Logic //
@@ -54,6 +66,10 @@ public class PolicyHandler{
 
         System.out.println("\n\n##### listener SendNotification : " + bidRequested.toJson() + "\n\n");
 
+        // REST Request Sample
+        stock.trading.external.Prices prices =
+            NotificationApplication.applicationContext.getBean(stock.trading.external.PricesService.class)
+            .getPrices(/** mapping value needed */);
 
 
         // Sample Logic //
